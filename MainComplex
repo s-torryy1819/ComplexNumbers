@@ -1,0 +1,29 @@
+public class Main_complex {
+    public static void main(String[] args){
+        Complex c1 = new Complex(3F,1F);
+        Complex c2 = new Complex(2F,-1F);
+        System.out.println("\nFirst number:\n");
+        c1.display();
+        System.out.println("\nSecond number:\n");
+        c2.display();
+        System.out.println("\nModule of the first number:\n");
+        c1.module();
+        System.out.println("\nModule of the second number:\n");
+        c2.module();
+        Complex c3 = new Complex();
+        c3 = c1.add(c2);
+        System.out.println("\nAddition of two numbers:\n");
+        c3.display();
+        Complex c4 = new Complex();
+        c4 = c1.multiply(c2);
+        System.out.println("\nMultiplication of two numbers:\n");
+        c4.display();
+        Complex c5 = new Complex();
+        c5 = c1.division(c2);
+        System.out.println("\nDivision of two numbers:\n");
+        c5.display();
+        System.out.println("\nModule of sum of two numbers:\n");
+        c3.moduleOfSum(c3);
+
+    }
+}
